@@ -1,0 +1,40 @@
+node_modules/
+dist/
+coverage/
+.vite/
+.cache/
+*.log
+.playwright-mcp/
+*.tsbuildinfo
+*.tmp
+*.temp
+*.bak
+*~
+
+# Secrets and private machine configuration
+.env
+.env.*
+.npmrc
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.vscode/
+.idea/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Reference books and licensed source material stay local
+*.pdf
+*.epub
+*.djvu
+*.mobi
+*.azw
+*.azw3
+
+# Local screenshots and implementation notes, not application assets
+/*.png
+/PROGRESS.md
