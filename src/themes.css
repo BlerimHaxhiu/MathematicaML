@@ -1,0 +1,41 @@
+:root{--theme-page:#f4f6f7;--theme-slide:#fff;--theme-text:#15394c;--theme-secondary:#527280;--theme-surface:#fff;--theme-interactive:#f0f7f8;--theme-border:#dce7eb;--theme-accent:#087e8b;color-scheme:light}
+:root[data-theme="dark"]{--theme-page:#0b1420;--theme-slide:#111e2d;--theme-text:#edf3f8;--theme-secondary:#b4c5d3;--theme-surface:#172738;--theme-interactive:#21384c;--theme-border:#3b5368;--theme-accent:#65d3cf;color-scheme:dark}
+body{background:var(--theme-page)}
+.theme-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:36px;padding:7px 11px;border:1px solid var(--theme-border);border-radius:7px;background:var(--theme-surface);color:var(--theme-text);font-size:13px;line-height:1.3;white-space:nowrap}
+.theme-toggle:hover{background:var(--theme-interactive)}.theme-toggle:focus-visible{outline:3px solid #77afd7;outline-offset:3px}.theme-icon{flex:none}
+.home-shell{position:relative}.home-theme-control{position:absolute;top:21px;right:32px}.presentation-controls button.theme-toggle{min-width:36px;height:36px;padding:7px;margin-right:4px;background:var(--theme-surface);color:var(--theme-text);border:1px solid var(--theme-border)}.presentation-controls .theme-toggle>span{display:none}
+/* Plotting surfaces intentionally remain light, including their controls and annotations. */
+.graph,.home-page .math-motif{background:#fff;color:#15394c;color-scheme:light;border-radius:8px;--navy:#15394c;--teal:#087e8b;--blue:#2463d5;--line:#dce7eb}
+.slide-visual:has(svg){background:#fff;color:#15394c;color-scheme:light;border-radius:10px;--navy:#15394c;--teal:#087e8b;--blue:#2463d5;--line:#dce7eb}
+.graph text{fill:#44616f}.graph .point-label{fill:#2459a7}.graph .axis-label{fill:#3c6578}.home-page .motif-axes text{fill:#68808e}.home-page .motif-label,.home-page .motif-integral{fill:#527180}
+[data-theme="dark"] .slide-stage,[data-theme="dark"] .intermission{background:var(--theme-slide);color:var(--theme-text)}
+[data-theme="dark"] .slide{color:var(--theme-text);--navy:var(--theme-text);--teal:var(--theme-accent);--blue:#a7c6ff;--line:var(--theme-border)}
+[data-theme="dark"] .slide-heading{border-color:var(--theme-accent)}
+[data-theme="dark"] .slide-copy :is(.statement,.interpretation,.reasoning li),[data-theme="dark"] .slide-copy>p{color:var(--theme-secondary)}
+[data-theme="dark"] .slide-copy :is(h2,.main-equation,.worked-equation,.question-equation),[data-theme="dark"] .slide-visual:not(:has(svg)){color:var(--theme-text)}
+[data-theme="dark"] .slide-visual:not(:has(svg)) :is(p,.d-readout,.exercise-readout,.chapter-visual-note,.preview-note){color:var(--theme-secondary)}
+[data-theme="dark"] .slide-visual:not(:has(svg)) :is(h2,.blue,.orange){color:var(--theme-accent)}
+[data-theme="dark"] :is(.slide-copy,.slide-visual:not(:has(svg))) .katex :is([style*="color:#087e8b" i],[style*="color:#0d9488" i]){color:#65d3cf!important}
+[data-theme="dark"] :is(.slide-copy,.slide-visual:not(:has(svg))) .katex :is([style*="color:#2463d5" i],[style*="color:#2563eb" i]){color:#a7c6ff!important}
+[data-theme="dark"] .slide-copy .content-controls button{color:#b3cad9}[data-theme="dark"] .slide-copy .content-controls .active{color:var(--theme-accent)}
+[data-theme="dark"] :is(.presentation-controls,.jump-dialog){background:var(--theme-surface);color:var(--theme-text);border-color:var(--theme-border)}
+[data-theme="dark"] .presentation-controls button:hover{background:var(--theme-interactive);color:var(--theme-text)}
+[data-theme="dark"] .presentation-controls .slide-counter span{color:var(--theme-secondary)}
+[data-theme="dark"] .presentation-controls .home-link:hover{background:var(--theme-interactive);color:var(--theme-text)}
+[data-theme="dark"] :is(.slide-copy,.slide-visual:not(:has(svg)),.intermission,.jump-dialog) :is(button,input,select){background:var(--theme-surface);color:var(--theme-text);border-color:var(--theme-border)}
+[data-theme="dark"] :is(.slide-copy,.slide-visual:not(:has(svg)),.intermission,.jump-dialog) button:hover{background:var(--theme-interactive)}
+[data-theme="dark"] .intermission .timer{color:var(--theme-accent)}[data-theme="dark"] .intermission button:last-child{background:#bde5e8;color:#15394c}
+[data-theme="dark"] .slide-visual:has(svg){color:#15394c;--navy:#15394c;--teal:#087e8b;--blue:#2463d5;--line:#dce7eb;box-shadow:0 0 0 12px #fff}
+[data-theme="dark"] .home-page{background:var(--theme-page);color:var(--theme-text);--home-muted:var(--theme-secondary);--home-border:var(--theme-border)}
+[data-theme="dark"] .home-header h1{color:var(--theme-text)}[data-theme="dark"] .home-description{color:var(--theme-secondary)}
+[data-theme="dark"] :is(.home-attribution,.home-attribution span,.home-footer,.chapters-heading>span){color:#a5bacb}
+[data-theme="dark"] :is(.home-introduction,.chapter-card,.chapter-trigger,.chapter-trigger:hover){background:var(--theme-surface);color:var(--theme-text);border-color:var(--theme-border)}
+[data-theme="dark"] .chapter-card:hover,[data-theme="dark"] .chapter-expanded{border-color:#6995ac;box-shadow:0 6px 22px #0002}
+[data-theme="dark"] :is(.chapter-number,.chapter-disclosure,.chapter-option-detail){color:#b0c7d8}
+[data-theme="dark"] .intro-copy .intro-eyebrow,[data-theme="dark"] .chapter-expanded .chapter-disclosure{color:var(--theme-accent)}
+[data-theme="dark"] .chapter-disclosure{border-color:var(--theme-border)}
+[data-theme="dark"] .chapter-options>a{background:#213b50;color:var(--theme-text)}[data-theme="dark"] .chapter-options>a:hover{background:#2c4b61}
+[data-theme="dark"] :is(.chapter-unavailable,.chapter-coming,.intro-actions>span){color:#b0c2d0}
+[data-theme="dark"] .intro-actions>a{background:#d2e9ef;color:#15394c;border-color:#d2e9ef}[data-theme="dark"] .intro-actions>a:hover{background:#b8dfe7}
+[data-theme="dark"] .intro-illustration{background:#fff}
+@media(max-width:600px){.home-theme-control{position:static;display:flex;justify-content:flex-end;margin-bottom:18px}}

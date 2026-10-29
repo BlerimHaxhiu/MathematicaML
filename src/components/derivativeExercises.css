@@ -1,0 +1,11 @@
+.derivative-exercises-slide .slide-heading h1{font-size:38px}
+.de-body{grid-template-columns:850px 1fr;gap:38px}.de-body.de-stage-2{grid-template-columns:980px 1fr;gap:30px}
+.de-copy{padding:8px 0 65px}.de-stage-title{font-size:22px;letter-spacing:.015em;font-weight:500;color:var(--teal);margin:0 0 28px}
+.de-authored .statement{font-size:27px;line-height:1.65;margin:0 0 25px;color:inherit}.de-authored .statement .math{font-size:.95em}
+.de-stage-0 .de-authored{border-left:3px solid var(--blue);padding-left:24px}.de-stage-1 .de-authored{border-left:3px solid var(--teal);padding-left:24px}.de-stage-3 .de-authored{border-top:1px solid var(--line);padding-top:24px}
+.de-stage-2 .de-stage-title{margin-bottom:14px}.de-equation{font-size:26px;margin:15px 0;padding:4px 0}.de-equation .katex-display{text-align:left}.de-copy .content-controls{bottom:5px}
+.de-visual{display:flex;flex-direction:column;justify-content:center;gap:14px;padding-top:0}.de-visual>.graph{width:100%;min-height:0;flex-shrink:1}.de-visual .slider{flex:none;font-size:19px}.de-visual .field{font-size:22px;display:flex;justify-content:space-between;gap:12px}.de-visual select{max-width:190px;font-size:21px}
+.de-visual .graph text{font-size:20px}.de-readout{font-size:21px;line-height:1.45;color:#527280}.de-figure-equation{font-size:22px}.de-visual h2{font-size:20px;color:var(--teal)}.de-visual .legend{font-size:18px;flex:none}
+.de-diagram{width:100%;height:370px;flex:0 1 370px}.de-diagram text,.de-motion text{font:21px 'Segoe UI',sans-serif;fill:var(--navy)}.de-motion{width:100%;height:75px;flex:none}.de-cone{height:250px;flex-basis:250px}.de-chain{display:flex;flex-direction:column;align-items:center;gap:25px}.de-chain .de-figure-equation{font-size:24px}.de-chain-arrow{font-size:28px;color:var(--teal)}
+.de-stage-2 .de-visual .de-figure-equation{font-size:19px}.de-stage-2 .de-visual .de-readout{font-size:20px}
+.de-rod{width:100%;height:65px;flex:none}.de-rod text{font:20px 'Segoe UI',sans-serif;fill:var(--navy)}.de-interval-table{font-size:19px}.de-interval-table td,.de-interval-table th{padding:5px}
